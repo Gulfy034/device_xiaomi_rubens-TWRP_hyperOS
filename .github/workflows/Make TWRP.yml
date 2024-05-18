@@ -44,8 +44,8 @@ jobs:
       run: |
         mkdir ${GITHUB_WORKSPACE}/workspace
         cd ${GITHUB_WORKSPACE}/workspace
-        git config --global user.name "Hikaru's Action-Build-Bot"
-        git config --global user.email "Android@teio.tk"
+        git config --global user.name "Gugu Action-Bot"
+        git config --global user.email "99170315+Gulfy034@users.noreply.github.com"
         repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 
     - name: Repo Sync
@@ -64,7 +64,7 @@ jobs:
     - name: Clone Device Tree
       run: |
         cd ${GITHUB_WORKSPACE}/workspace
-        git clone https://github.com/YuKongA/device_xiaomi_rubens-TWRP.git -b twrp-12.1_A13 ./device/xiaomi/rubens
+        git clone https://github.com/Gulfy034/device_xiaomi_rubens-TWRP_stable-hyperOS.git -b twrp-12.1_A13_stable ./device/xiaomi/rubens
 
     - name: Building
       run: |
@@ -76,5 +76,5 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: rubens_twrp-13
+        name: rubens_twrp-13_test
         path: workspace/out/target/product/rubens/vendor_boot.img
