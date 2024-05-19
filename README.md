@@ -4,7 +4,9 @@
 
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
 
-It was released in March 2022.
+> [!TIP]
+> This is for the STABLE version of the redmi k50 (rubens) device.
+> Only uses in HyperOS, do not build it for MIUI !
 
 ## Device specifications
 
