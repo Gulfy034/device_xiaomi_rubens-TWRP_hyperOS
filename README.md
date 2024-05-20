@@ -1,5 +1,7 @@
 ### TWRP device tree for Redmi K50 (rubens)
 
+EN/[CN](README_zh-CN.md)
+
 =========================================
 
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
@@ -23,12 +25,17 @@ Display | 1440 x 3200 pixels, 6.67 inches, 60/120 hz
 
 ![Redmi K50](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1653381863.47942179.png)
 
+## Descriptions
+
+> is fixing vendor mounting
+> is fixing userdata decrypting
+
 ## Features
 
 Works:
 
 - [X] ADB
-- [X] Decryption (Android 13)
+- [ ] Decryption (TODO: userdata FBE decryption)
 - [X] Display
 - [X] Fasbootd
 - [X] Flashing
