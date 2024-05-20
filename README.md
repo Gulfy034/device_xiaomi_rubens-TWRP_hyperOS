@@ -7,7 +7,6 @@ EN/[CN](README_zh-CN.md)
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
 
 > [!TIP]
-
 > This is for the STABLE version of the redmi k50 (rubens) device.
 
 > Only uses in CN-STABLE-HyperOS, do not build it for MIUI !
@@ -61,6 +60,10 @@ Then add these projects to .repo/manifest.xml:
 ```xml
 <project path="device/xiaomi/rubens" name="D8100-9000-TWRP-Device-Tree/device_xiaomi_rubens-TWRP" remote="github" revision="twrp-13" />
 ```
+
+Then clone this repository and rename the folder into "rubens" 
+
+move this twrp repository to `/sync/path/to/device/xiaomi`
 
 Finally execute these:
 
