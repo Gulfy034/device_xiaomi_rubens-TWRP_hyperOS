@@ -7,9 +7,9 @@ EN/[CN](README_zh-CN.md)
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
 
 > [!TIP]
-> This is for the STABLE version of the redmi k50 (rubens) device.
+> This is for the **STABLE** version of the redmi k50 (rubens) device.
 
-> Only uses in CN-STABLE-HyperOS, do not build it for MIUI !
+> Only uses in **CN** **STABLE** **HyperOS**, do not build it for MIUI !
 
 ## Device specifications
 
@@ -71,10 +71,13 @@ Finally execute these:
 source build/envsetup.sh
 repopick <needed patch>
 lunch twrp_rubens-eng
-mka vendorbootimage -j$(nproc --all)
 ```
 ## To use it:
 
+> [!WARNING]
+> Because of the MTK chipset, you MUST flash the twrp in vendor_boot_a partication.
+
 ```
-fastboot flash vendor_boot out/target/product/rubens/vendor_boot.img
+fastboot getvar current_slot  //make sure you have sellect the correct slot
+fastboot flash vendor_boot_a out/target/product/rubens/vendor_boot.img
 ```
