@@ -7,8 +7,10 @@ EN/[CN](README_zh-CN.md)
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
 
 > [!TIP]
+
 > This is for the STABLE version of the redmi k50 (rubens) device.
-> Only uses in HyperOS, do not build it for MIUI !
+
+> Only uses in CN-STABLE-HyperOS, do not build it for MIUI !
 
 ## Device specifications
 
@@ -25,9 +27,10 @@ Display | 1440 x 3200 pixels, 6.67 inches, 60/120 hz
 
 ![Redmi K50](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1653381863.47942179.png)
 
-## Descriptions
+## Tips:
 
 > is fixing vendor mounting
+
 > is fixing userdata decrypting
 
 ## Features
@@ -46,7 +49,7 @@ Works:
 
 ## Compile
 
-First checkout minimal twrp with aosp tree:
+First checkout [minimal twrp with aosp tree](https://github.com/minimal-manifest-twrp):
 
 ```
 repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
